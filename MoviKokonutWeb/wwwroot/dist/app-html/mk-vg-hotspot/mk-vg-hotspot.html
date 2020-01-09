@@ -1,0 +1,3 @@
+<vg-hotspot ng-repeat="hotspot in hostpots.items" ng-click="ShowHotspotDetails(hotspot)" ng-show="hotspot.showHotspot" style="left: {{hotspot.posLeft}}px;top:{{hotspot.posTop}}px;"></vg-hotspot>
+<vg-hotspot-details  ng-show="showDetails && API.currentState == 'pause'">
+</vg-hotspot-details>

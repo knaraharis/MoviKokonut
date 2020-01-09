@@ -1,0 +1,152 @@
+#video_box{
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.videogular-container {
+    width: 100%;
+    height: 320px;
+    margin: 0px;
+}
+
+videogular vg-media, [videogular] vg-media {
+    position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:calc(100% - 50px);
+	overflow:hidden;
+}
+
+vg-media iframe, vg-media object, vg-media embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.items-container {
+    width: 100%;
+    height: 100px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    border: 2px #8EC1DA solid;
+    box-sizing: border-box;
+}
+
+vg-item {
+    display: block;
+    cursor: pointer;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    border: #324F69 solid 1px;
+    height: 85px;
+    width: 85px;
+    margin: 5px;
+    float: left;
+}
+
+    vg-item article {
+        padding: 5px;
+    }
+
+        vg-item article header {
+            position: relative;
+        }
+
+            vg-item article header h4 {
+                margin: 0;
+            }
+
+            vg-item article header .user {
+                display: inline-block;
+                margin: 0;
+                height: 48px;
+                top: 5px;
+                bottom: 0;
+                left: 63px;
+                position: absolute;
+            }
+
+    vg-item:hover {
+        background-color: #EEEEEE;
+    }
+
+    vg-item.selected {
+        background-color: #C0DEED;
+    }
+
+    vg-item.completed {
+        opacity: 0.5;
+    }
+
+.animable {
+    -webkit-transition: 0.5s linear all;
+    transition: 0.5s ease-out all;
+}
+
+videogular vg-cuepoints {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0px;
+}
+
+    videogular vg-cuepoints vg-cuepoint {
+        position: absolute;
+        top: -16px;
+        display: block;
+        width: 2px;
+        height: 30px;
+        background-color: red;
+    }
+
+
+videogular vg-hotspots {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 0px;
+    pointer-events: none;
+}
+
+    videogular vg-hotspots vg-hotspot {
+        position: absolute;
+        display: block;
+        border-radius: 5px;
+        height: 10px;
+        width: 10px;
+        background-color: red;
+        pointer-events: auto;
+    }
+
+    videogular vg-hotspots vg-hotspot-details {
+        position: absolute;
+        display: block;
+        border-radius: 5px;
+        height: 120px;
+        width: 60px;
+        border: 1px solid red;
+        background-color:white;
+    }
+
+    
+
+@media (min-width: 768px) {
+    .items-container {
+        width: 700px;
+        height: 100px;
+    }
+
+    .videogular-container {
+        width: 700px;
+        height: 409.5px;
+    }
+
+        .videogular-container.audio {
+            width: 700px;
+            height: 50px;
+        }
+}

@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviKokonutWeb", "MoviKokonutWeb\MoviKokonutWeb.csproj", "{D30557A2-8623-434F-877D-27D715AD4B61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviKokonutWeb.Tests", "MoviKokonutWeb.Tests\MoviKokonutWeb.Tests.csproj", "{9A950A21-EA21-4A5C-821A-683410A81161}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviKokonutWebAPI", "MoviKoKonutWebAPI\MoviKokonutWebAPI.csproj", "{4241BC62-66A8-40EB-923C-E1C5D4D8C836}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviKokonutWebAPI.Tests", "MoviKoKonutWebAPI.Tests\MoviKokonutWebAPI.Tests.csproj", "{59744958-2C4E-415D-B9C9-70EA51342A1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviKokonut.Domain", "MoviKoKonut.Domain\MoviKokonut.Domain.csproj", "{DF35B055-A79B-4359-BE69-F56A74893782}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviKokonut.Repository", "MoviKoKonut.Repository\MoviKokonut.Repository.csproj", "{15B9AF00-448F-433D-A0A2-D7AD5E5BA149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviKokonut.Domain.Services", "MoviKokonut.Domain.Services\MoviKokonut.Domain.Services.csproj", "{C07E6A04-8F0A-4B88-B838-7A725838F087}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviKokonut.Domain.Services.Interface", "MoviKokonut.Domain.Services.Interface\MoviKokonut.Domain.Services.Interface.csproj", "{E4399410-C57B-459D-BDF4-30F5017EF6A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviKokonut.Repository.Implementation", "MoviKokonut.Repository.Implementation\MoviKokonut.Repository.Implementation.csproj", "{117C3703-62DC-4611-8CA2-160C728DE621}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D30557A2-8623-434F-877D-27D715AD4B61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D30557A2-8623-434F-877D-27D715AD4B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D30557A2-8623-434F-877D-27D715AD4B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D30557A2-8623-434F-877D-27D715AD4B61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A950A21-EA21-4A5C-821A-683410A81161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A950A21-EA21-4A5C-821A-683410A81161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A950A21-EA21-4A5C-821A-683410A81161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A950A21-EA21-4A5C-821A-683410A81161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4241BC62-66A8-40EB-923C-E1C5D4D8C836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4241BC62-66A8-40EB-923C-E1C5D4D8C836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4241BC62-66A8-40EB-923C-E1C5D4D8C836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4241BC62-66A8-40EB-923C-E1C5D4D8C836}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59744958-2C4E-415D-B9C9-70EA51342A1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59744958-2C4E-415D-B9C9-70EA51342A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59744958-2C4E-415D-B9C9-70EA51342A1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59744958-2C4E-415D-B9C9-70EA51342A1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF35B055-A79B-4359-BE69-F56A74893782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF35B055-A79B-4359-BE69-F56A74893782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF35B055-A79B-4359-BE69-F56A74893782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF35B055-A79B-4359-BE69-F56A74893782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B9AF00-448F-433D-A0A2-D7AD5E5BA149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B9AF00-448F-433D-A0A2-D7AD5E5BA149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B9AF00-448F-433D-A0A2-D7AD5E5BA149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B9AF00-448F-433D-A0A2-D7AD5E5BA149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C07E6A04-8F0A-4B88-B838-7A725838F087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C07E6A04-8F0A-4B88-B838-7A725838F087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C07E6A04-8F0A-4B88-B838-7A725838F087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C07E6A04-8F0A-4B88-B838-7A725838F087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4399410-C57B-459D-BDF4-30F5017EF6A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4399410-C57B-459D-BDF4-30F5017EF6A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4399410-C57B-459D-BDF4-30F5017EF6A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4399410-C57B-459D-BDF4-30F5017EF6A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117C3703-62DC-4611-8CA2-160C728DE621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117C3703-62DC-4611-8CA2-160C728DE621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117C3703-62DC-4611-8CA2-160C728DE621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117C3703-62DC-4611-8CA2-160C728DE621}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://movikokonut.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MoviKokonutWeb.Tests\\MoviKokonutWeb.Tests.csproj
+		SccProjectName1 = MoviKokonutWeb.Tests
+		SccLocalPath1 = MoviKokonutWeb.Tests
+		SccProjectUniqueName2 = MoviKokonutWeb\\MoviKokonutWeb.csproj
+		SccProjectName2 = MoviKokonutWeb
+		SccLocalPath2 = MoviKokonutWeb
+		SccProjectUniqueName3 = MoviKoKonutWebAPI\\MoviKokonutWebAPI.csproj
+		SccProjectName3 = MoviKoKonutWebAPI
+		SccLocalPath3 = MoviKoKonutWebAPI
+		SccProjectUniqueName4 = MoviKoKonutWebAPI.Tests\\MoviKokonutWebAPI.Tests.csproj
+		SccProjectName4 = MoviKoKonutWebAPI.Tests
+		SccLocalPath4 = MoviKoKonutWebAPI.Tests
+		SccProjectUniqueName5 = MoviKoKonut.Domain\\MoviKokonut.Domain.csproj
+		SccProjectName5 = MoviKoKonut.Domain
+		SccLocalPath5 = MoviKoKonut.Domain
+		SccProjectUniqueName6 = MoviKoKonut.Repository\\MoviKokonut.Repository.csproj
+		SccProjectName6 = MoviKoKonut.Repository
+		SccLocalPath6 = MoviKoKonut.Repository
+		SccProjectUniqueName7 = MoviKokonut.Domain.Services\\MoviKokonut.Domain.Services.csproj
+		SccProjectName7 = MoviKokonut.Domain.Services
+		SccLocalPath7 = MoviKokonut.Domain.Services
+		SccProjectUniqueName8 = MoviKokonut.Domain.Services.Interface\\MoviKokonut.Domain.Services.Interface.csproj
+		SccProjectName8 = MoviKokonut.Domain.Services.Interface
+		SccLocalPath8 = MoviKokonut.Domain.Services.Interface
+		SccProjectUniqueName9 = MoviKokonut.Repository.Implementation\\MoviKokonut.Repository.Implementation.csproj
+		SccProjectName9 = MoviKokonut.Repository.Implementation
+		SccLocalPath9 = MoviKokonut.Repository.Implementation
+	EndGlobalSection
+EndGlobal

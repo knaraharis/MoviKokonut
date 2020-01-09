@@ -1,0 +1,120 @@
+﻿@using MoviKokonutWeb.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in/Register";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <section id="loginForm">
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                <div class="breadcrumb">
+                    <div class="container">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><span class="current">Login / Register</span></li>
+                        </ul>
+                    </div><!-- .container -->
+                </div><!-- .breadcrumb -->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="signin">
+                                <h2 class="heading-title">Sign in</h2>
+                                <p>Hello, welcome to your account.</p>
+                                <div class="social-signin">
+                                    <a href="#" target="_blank" class="button facebook"><i class="fa fa-facebook"></i> SIGN IN WITH FACEBOOK</a>
+                                    <a href="#" target="_blank" class="button twitter"><i class="fa fa-twitter"></i> SIGN IN WITH TWITTER</a>
+                                </div>
+
+                                <form action="#">
+                                    <div class="input-field">
+                                        <label for="s-email">Email Address *</label>
+                                        <input id="s-email" class="input-text" type="email" name="email" placeholder="Your email" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label for="pass">Password *</label>
+                                        <input id="pass" class="input-text" type="password" name="pass" placeholder="Password" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="yes" id="remember" name="remember">
+                                            <label for="remember">Remember me!</label>
+                                        </div>
+                                        <a href="#" class="fogot">Fogot your password?</a>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <input type="submit" value="Login now" class="button dark">
+                                    </div>
+                                </form>
+                            </div><!-- .signin -->
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="register">
+                                <h2 class="heading-title">Create a new account</h2>
+                                <p>Create your own Rimbus account.</p>
+
+                                <form action="#">
+                                    <div class="input-field">
+                                        <label for="r-email">Email Address *</label>
+                                        <input id="r-email" class="input-text" type="email" name="email" placeholder="Your email" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <input type="submit" value="Sign up" class="button dark">
+                                    </div>
+                                </form>
+
+                                <div class="signup-today">
+                                    <h2 class="heading-title">SIGN UP TODAY AND YOU’LL BE ABLE TO</h2>
+
+                                    <div class="input-field">
+                                        <div class="checkbox">
+                                            <input type="radio" id="speed" name="signup-today">
+                                            <label for="speed">Speed your way through the checkout.</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <div class="checkbox">
+                                            <input type="radio" checked="checked" id="track" name="signup-today">
+                                            <label for="track">Track your orders easily.</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <div class="checkbox">
+                                            <input type="radio" id="keep" name="signup-today">
+                                            <label for="keep">Keep a record of all purchases.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .register -->
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .container -->
+
+                <div id="newsletter" class="site-newsletter parallax">
+                    <div class="container">
+                        <h2>Sign up special promotions</h2>
+                        <p>Get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                        <form action="#">
+                            <label><i class="fa fa-envelope-o"></i> Enter your email ...</label>
+                            <input type="email">
+                            <input type="submit" value="Subcribe">
+                        </form>
+                    </div><!-- .container -->
+                </div><!-- .site-newsletter -->
+
+            }
+        </section>
+    </div>
+    
+</div>
+

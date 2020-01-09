@@ -1,0 +1,163 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div ng-controller="videosController as controller">
+    <div id="video_box">
+        <div id="video_container" class="video_container" ng-view>
+        </div>
+    </div>
+    <div class="home-promotion animation-element fade-in">
+        <div class="container">
+            <h2 class="title"><span>Happening today</span></h2>
+            <div class="promo-item">
+                <h3 class="promo-title">GET 30% OFF YOUR ORDER OF &#8377;1000 OR MORE</h3>
+                <span class="promo-subtitle">ONLINE ONLY. USE CODE  <strong>"SBUYZNEW"</strong></span>
+            </div><!-- .promo-item -->
+        </div><!-- .container -->
+    </div><!-- .home-promotion -->
+    <div class="policy">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 animation-element fade-left">
+                    <div class="policy-item">
+                        <i class="pe-7s-plane"></i>
+                        <span>FREE SHIPPING WORLDWIDE</span>
+                    </div><!-- .policy-item -->
+                </div>
+
+                <div class="col-md-4 col-sm-4 animation-element fade-in">
+                    <div class="policy-item">
+                        <i class="pe-7s-headphones"></i>
+                        <span>24/7 CUSTOMER SERVICE</span>
+                    </div><!-- .policy-item -->
+                </div>
+
+                <div class="col-md-4 col-sm-4 animation-element fade-right">
+                    <div class="policy-item">
+                        <i class="pe-7s-refresh-2"></i>
+                        <span>MONEY BACK GUARATEE!</span>
+                    </div><!-- .policy-item -->
+                </div>
+            </div>
+        </div>
+    </div><!-- .policy -->
+    <div class="home-products-tab">
+        <div class="container">
+            <div class="tabs-container">
+                <ul class="tabs clearfix">
+                    <li><a href="#tab-wanted">Most Popular</a></li>
+                    <li><a href="#tab-arrival">New Released</a></li>
+                    <li><a href="#tab-seller">Classics</a></li>
+                </ul>
+                <div id="tab-wanted" class="tab-content">
+                    <div class="blog-slider">
+                        <mk-owlcarousel data-options="{items:5,itemsDesktop:[1199, 4],itemsDesktopSmall:[989, 3],
+                                            itemsTablet: [767, 2],itemsMobile: [540, 1],pagination:false,navigation:true}" class="blog-carousel">
+                            <div mk-owlcarousel-item="" class="item" ng-repeat="video in videos">
+                                <mk-video-item vg-data-provider="video"></mk-video-item>
+                            </div>
+                        </mk-owlcarousel><!-- .slider -->
+                    </div><!-- .product-slider -->
+                </div>
+
+                <div id="tab-arrival" class="tab-content">
+                    <div class="blog-slider">
+                        <mk-owlcarousel data-options="{items:5,itemsDesktop:[1199, 4],itemsDesktopSmall:[989, 3],
+                                            itemsTablet: [767, 2],itemsMobile: [540, 1],pagination:false,navigation:true}" class="blog-carousel">
+                            <div mk-owlcarousel-item="" class="item" ng-repeat="video in videos">
+                                <mk-video-item vg-data-provider="video"></mk-video-item>
+                            </div>
+                        </mk-owlcarousel><!-- .slider -->
+                    </div><!-- .product-slider -->
+                </div>
+
+                <div id="tab-seller" class="tab-content">
+                    <div class="blog-slider">
+                        <mk-owlcarousel data-options="{items:5,itemsDesktop:[1199, 4],itemsDesktopSmall:[989, 3],
+                                            itemsTablet: [767, 2],itemsMobile: [540, 1],pagination:false,navigation:true}" class="blog-carousel">
+                            <div mk-owlcarousel-item="" class="item" ng-repeat="video in videos">
+                                <mk-video-item vg-data-provider="video"></mk-video-item>
+                            </div>
+                        </mk-owlcarousel><!-- .slider -->
+                    </div><!-- .product-slider -->
+                </div>
+            </div><!-- .tabs-container -->
+        </div><!-- .container -->
+    </div><!-- .home-products-tab -->
+
+    <div class="home-sale-off-wrap">
+        <div class="container">
+            <div class="home-sale-off animation-element fade-right">
+                <div class="row">
+                    <div class="col-md-8 animation-element fade-left">
+                        <h2 class="title">BAHUBALI MERCHENDAISE</h2>
+                        <h3 class="subtitle">Exclusively Available on SPOTBUYZ. Stay tuned for more updates</h3>
+                        <div class="countdown"><ul></ul></div>
+                        <a href="#" class="button yellow">View all</a>
+                    </div>
+                </div>
+                <div class="sale-off-slider">
+                    <div class="slider">
+                        <div class="item">
+                            <img src="~/images/placeholder/sale-off-slider.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="~/images/placeholder/sale-off-slider1.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="~/images/placeholder/sale-off-slider2.jpg" alt="">
+                        </div>
+                    </div><!-- .slider -->
+                </div><!-- .sale-off-slider -->
+            </div><!-- .home-sale-off -->
+        </div><!-- .container -->
+    </div><!-- .home-sale-off-wrap -->
+
+    <div class="home-products-tab">
+        <div class="container">
+            <div class="tabs-container">
+                <ul class="tabs clearfix">
+                    <li><a href="#tab-men">Men</a></li>
+                    <li><a href="#tab-women">Women</a></li>
+                    <li><a href="#tab-accessories">Accessories</a></li>
+                </ul>
+
+                <div id="tab-men" class="tab-content">
+                    <div class="fullwidth">
+                        <div class="products list">
+                            <div class="product" ng-repeat="video in videos">
+                                <mk-product-item vg-data-provider="video"></mk-product-item>
+                            </div><!-- .product -->
+                        </div><!-- .products -->
+                    </div><!-- .fullwidth -->
+                    <a href="shop.html" class="button dark shop-cat-button">View all</a>
+                </div>
+
+                <div id="tab-women" class="tab-content">
+                    <a href="shop.html" class="button dark shop-cat-button">View all</a>
+                    <div class="fullwidth">
+                        <div class="products list">
+                            <div class="product" ng-repeat="video in videos">
+                                <mk-product-item vg-data-provider="video"></mk-product-item>
+                            </div><!-- .product -->
+                        </div><!-- .products -->
+                    </div><!-- .fullwidth -->
+                </div>
+
+                <div id="tab-accessories" class="tab-content">
+                    <a href="shop.html" class="button dark shop-cat-button">View all</a>
+                    <div class="fullwidth">
+                        <div class="products list">
+                            <div class="product" ng-repeat="video in videos">
+                                <mk-product-item vg-data-provider="video"></mk-product-item>
+                            </div><!-- .product -->
+                        </div><!-- .products -->
+                    </div><!-- .fullwidth -->
+                </div>
+            </div><!-- .tabs-container -->
+        </div><!-- .container -->
+    </div><!-- .home-products-tab -->
+
+</div>

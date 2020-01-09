@@ -1,0 +1,487 @@
+﻿<!doctype html>
+<html ng-app="movCoconutApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/wwwroot/lib/videogular/videogular.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="~/Content/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" type="text/css" href="~/Content/responsive.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/ie9/html5shiv.min.js"></script>
+      <script src="js/ie9/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body class="home-page4">
+    <div id="pageloader">
+        <div id="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div><!-- #pageloader -->
+
+    <div id="wrapper">
+        <header id="header" class="site-header">
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="top-info">
+                                <p>Call us free 24/7 : (+86) 6 888 888</p>
+                            </div><!-- .top-info -->
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="top-nav">
+                                <div class="currency dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">USD</a>
+                                            <ul>
+                                                <li><a href="#">USD</a></li>
+                                                <li><a href="#">EUR</a></li>
+                                                <li><a href="#">GBP</a></li>
+                                                <li><a href="#">JPY</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div><!-- .currency -->
+
+                                <div class="language dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">ENGLISH</a>
+                                            <ul>
+                                                <li><a href="#">ENGLISH</a></li>
+                                                <li><a href="#">FRANCE</a></li>
+                                                <li><a href="#">GERMANY</a></li>
+                                                <li><a href="#">JAPANESE</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div><!-- .language -->
+
+                                <div class="account">
+                                    <a href="@Url.Action("Login", "Account")" class="login">Sign in</a>
+                                    <span>Or</span>
+                                    <a href="login-register.html" class="register">Register</a>
+                                </div>
+                            </div><!-- .top-nav -->
+                        </div>
+                    </div><!-- .row -->
+                </div>
+            </div><!-- .top-header -->
+
+            <div class="mid-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-9 col-xs-5">
+                            <div class="site-brand">
+                                <a href="#" class="logo">
+                                    <img src="~/images/assets/logo.png" alt="">
+                                </a>
+                            </div><!-- .site-brand -->
+                        </div>
+
+                        <div class="col-md-8 col-sm-1 col-xs-2 pull-right">
+                            <nav class="main-menu">
+                                <span class="mobile-menu"></span>
+                                <ul>
+                                    <li class="current-menu-item">
+                                        <a ng-href="#/home">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Products</a>
+                                        <div class="sub-menu mega-menu">
+                                            <div class="mega-item">
+                                                <h3 class="menu-title">MENS WEAR</h3>
+                                                <ul>
+                                                    <li><a href="#">Shirts/Tops</a></li>
+                                                    <li><a href="#">Dresses</a></li>
+                                                    <li><a href="#">Swimwear</a></li>
+                                                    <li><a href="#">Suite</a></li>
+                                                    <li><a href="#">Jeans</a></li>
+                                                    <li><a href="#">Shoes</a></li>
+                                                    <li><a href="#">Sweaters</a></li>
+                                                </ul>
+                                            </div><!-- .mega-item -->
+
+                                            <div class="mega-item">
+                                                <h3 class="menu-title">WOMENS WEAR</h3>
+                                                <ul>
+                                                    <li><a href="#">Party Dress</a></li>
+                                                    <li><a href="#">T - Shirt</a></li>
+                                                    <li><a href="#">Jean / Trousers</a></li>
+                                                    <li><a href="#">Jacket / Coats</a></li>
+                                                    <li><a href="#">Sweaters</a></li>
+                                                    <li><a href="#">Blouses</a></li>
+                                                    <li><a href="#">Sports &amp; Lifestyle</a></li>
+                                                </ul>
+                                            </div><!-- .mega-item -->
+
+                                            <div class="mega-item">
+                                                <h3 class="menu-title">ACCESSORIES</h3>
+                                                <ul>
+                                                    <li><a href="#">Leather</a></li>
+                                                    <li><a href="#">Sunglasses</a></li>
+                                                    <li><a href="#">Belts</a></li>
+                                                    <li><a href="#">Ring</a></li>
+                                                    <li><a href="#">Sweaters</a></li>
+                                                    <li><a href="#">Sassuawear</a></li>
+                                                    <li><a href="#">Bag &amp; Persess</a></li>
+                                                </ul>
+                                            </div><!-- .mega-item -->
+
+                                            <div class="mega-item image">
+                                                <a href="#"><img src="~/images/placeholder/mega-menu.jpg" alt=""></a>
+                                            </div><!-- .mega-item -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Trail Room</a>
+                                        <div class="sub-menu mega-menu">
+                                            <div class="mega-item">
+                                                <h3 class="menu-title">Movie clips</h3>
+                                                <ul>
+                                                    <li><a href="#">Hollywood</a></li>
+                                                    <li><a href="#">Bollywood</a></li>
+                                                    <li><a href="#">Tollywood</a></li>
+                                                    <li><a href="#">Kollywood</a></li>
+                                                    <li><a href="#">Mollywood</a></li>
+                                                </ul>
+                                            </div><!-- .mega-item -->
+
+                                            <div class="mega-item">
+                                                <h3 class="menu-title">TV Shows</h3>
+                                                <ul>
+                                                    <li><a href="#">Serials</a></li>
+                                                    <li><a href="#">Short films</a></li>
+                                                    <li><a href="#">Documentaries</a></li>
+                                                </ul>
+                                            </div><!-- .mega-item -->
+
+                                            <div class="mega-item">
+                                                <h3 class="menu-title">Others</h3>
+                                                <ul>
+                                                    <li><a href="#">Sports</a></li>
+                                                    <li><a href="#">Pop Albums</a></li>
+                                                    <li><a href="#">Celebrity wear</a></li>
+                                                </ul>
+                                            </div><!-- .mega-item -->
+
+                                            <div class="mega-item image">
+                                                <a href="#"><img src="~/images/placeholder/mega-menu.jpg" alt=""></a>
+                                            </div><!-- .mega-item -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Designer wear</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Popular designers</a></li>
+                                            <li><a href="#">Peoples choice</a></li>
+                                            <li><a href="#">Highly rated designers</a></li>
+                                        </ul>
+                                    </li>
+                                    @*<li>
+                                            <a href="blog.html">Account</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog.html">My Details</a></li>
+                                                <li><a href="blog-right-sidebar.html">My Wish-list</a></li>
+                                                <li><a href="single.html">My Orders</a></li>
+                                                <li><a href="single-right-sidebar.html">All Transactions</a></li>
+                                            </ul>
+                                        </li>*@
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="col-md-2 col-sm-2 col-xs-5">
+                            <div class="right-header">
+                                <div class="searchbox">
+                                    <span class="icon"><img src="~/images/assets/icons/search.png" alt=""></span>
+                                    <form method="get" class="search-form" action="#">
+                                        <label>
+                                            <span class="screen-reader-text">Search for:</span>
+                                            <input type="search" class="search-field" placeholder="Enter keyword ..." name="s" />
+                                        </label>
+                                        <input type="submit" class="search-submit" value="Search" />
+                                    </form>
+                                </div><!-- .searchbox -->
+
+                                <div class="shop-cart">
+                                    <a href="#" class="cart-control">
+                                        <img src="~/images/assets/icons/cart.png" alt="">
+                                        <span class="cart-number">3</span>
+                                    </a><!-- .cart-control -->
+
+                                    <div class="shop-item">
+                                        <div class="widget_shopping_cart_content">
+                                            <ul class="cart_list">
+                                                <li class="clearfix">
+                                                    <a class="p-thumb" href="single-product.html">
+                                                        <img src="~/images/placeholder/recent-post-img1.jpg" alt="">
+                                                    </a>
+                                                    <div class="p-info">
+                                                        <a class="p-title" href="#">Phasellus Vel Hendrerit</a>
+                                                        <span class="price">
+                                                            <ins><span class="amount">&#8377;1035</span></ins>
+                                                            <del>&#8377;1500</del>
+                                                        </span>
+                                                        <span class="p-qty">QTY: 01</span>
+                                                        <a class="remove" href="#"><i class="fa fa-times-circle"></i></a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="clearfix">
+                                                    <a class="p-thumb" href="single-product.html">
+                                                        <img src="~/images/placeholder/recent-post-img2.jpg" alt="">
+                                                    </a>
+                                                    <div class="p-info">
+                                                        <a class="p-title" href="#">Phasellus Vel Hendrerit</a>
+                                                        <span class="price">
+                                                            <ins><span class="amount">&#8377;1035</span></ins>
+                                                            <del>&#8377;1500</del>
+                                                        </span>
+                                                        <span class="p-qty">QTY: 01</span>
+                                                        <a class="remove" href="#"><i class="fa fa-times-circle"></i></a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="clearfix">
+                                                    <a class="p-thumb" href="single-product.html">
+                                                        <img src="~/images/placeholder/recent-post-img3.jpg" alt="">
+                                                    </a>
+                                                    <div class="p-info">
+                                                        <a class="p-title" href="#">Phasellus Vel Hendrerit</a>
+                                                        <span class="price">
+                                                            <ins><span class="amount">&#8377;1035</span></ins>
+                                                            <del>&#8377;1500</del>
+                                                        </span>
+                                                        <span class="p-qty">QTY: 01</span>
+                                                        <a class="remove" href="#"><i class="fa fa-times-circle"></i></a>
+                                                    </div>
+                                                </li>
+                                            </ul><!-- end cart_list -->
+                                            <p class="total"><strong>Subtotal:</strong> <span class="amount">&#8377;3135</span></p>
+                                            <p class="buttons">
+                                                <a class="button cart-button" href="cart.html">View Cart</a>
+                                                <a class="button dark wc-forward" href="checkout.html">Checkout</a>
+                                            </p>
+                                        </div>
+                                    </div><!-- .shop-item -->
+                                </div><!-- .shop-cart -->
+                                <div class="shop-cart" style="padding-left:20px;">
+                                    <a href="#" class="cart-control">
+                                        <img src="~/images/assets/icons/User.png" alt="">
+                                        <span class="cart-number">3</span>
+                                    </a><!-- .cart-control -->
+
+                                    <div class="shop-item">
+                                        <div class="widget_shopping_cart_content">
+                                            <ul class="cart_list">
+                                                <li class="clearfix">
+                                                    <a href="blog-right-sidebar.html">My Wish-list</a>
+                                                </li>
+
+                                                <li class="clearfix">
+                                                    <a href="blog-right-sidebar.html">My Wish-list</a>
+                                                </li>
+
+                                                <li class="clearfix">
+                                                    <a href="single.html">My Orders</a>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <a href="single-right-sidebar.html">All Transactions</a>
+                                                </li>
+                                            </ul><!-- end cart_list -->
+
+                                        </div>
+                                    </div><!-- .shop-item -->
+                                </div><!-- .shop-cart -->
+                            </div><!-- .right-header -->
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .mid-header -->
+        </header><!-- .site-header -->
+
+        <div id="content" class="site-content">
+            @RenderBody()
+        </div><!-- .site-content -->
+
+
+        <footer id="footer" class="site-footer">
+            <div class="container">
+                <div class="footer-widget">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <aside class="widget">
+                                <h3 class="widget-title">About Lena fashion</h3>
+                                <div class="textwidget">
+                                    <p>
+                                        <strong>ADD</strong>  262 Milacina Mrest Street, Behansed, Paris, France<br />
+                                        <strong>TEL</strong>  (+84) 3 888 888<br />
+                                        <strong>MAIL</strong>  contact@lenashop.com
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="fa fa-behance"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- .textwidget -->
+                            </aside><!-- .widget -->
+                        </div>
+
+                        <div class="col-md-2 col-sm-6 col-xs-6">
+                            <aside class="widget">
+                                <h3 class="widget-title">Our Service</h3>
+                                <ul>
+                                    <li><a href="#">Shipping Policy</a></li>
+                                    <li><a href="#">Compensation Fist</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </aside><!-- .widget -->
+                        </div>
+
+                        <div class="col-md-2 col-sm-6 col-xs-6">
+                            <aside class="widget time-work">
+                                <h3 class="widget-title">(+84) 3 888 888</h3>
+                                <p>
+                                    monday - friday<br />
+                                    AM 10:00 - PM 5:00
+                                </p>
+                                <img src="~/images/assets/time-work.png" alt="">
+                            </aside><!-- .widget -->
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <aside class="widget flickr-widget">
+                                <h3 class="widget-title">FLICKR PHOTO</h3>
+                                <ul>
+                                    <li class="light-line"><a href="#"><img src="~/images/placeholder/flickr-img1.jpg" alt=""></a></li>
+                                    <li class="light-line"><a href="#"><img src="~/images/placeholder/flickr-img2.jpg" alt=""></a></li>
+                                    <li class="light-line"><a href="#"><img src="~/images/placeholder/flickr-img3.jpg" alt=""></a></li>
+                                    <li class="light-line"><a href="#"><img src="~/images/placeholder/flickr-img4.jpg" alt=""></a></li>
+                                    <li class="light-line"><a href="#"><img src="~/images/placeholder/flickr-img5.jpg" alt=""></a></li>
+                                    <li class="light-line"><a href="#"><img src="~/images/placeholder/flickr-img6.jpg" alt=""></a></li>
+                                    <li class="light-line"><a href="#"><img src="~/images/placeholder/flickr-img7.jpg" alt=""></a></li>
+                                    <li class="light-line"><a href="#"><img src="~/images/placeholder/flickr-img8.jpg" alt=""></a></li>
+                                </ul>
+                            </aside><!-- .widget -->
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .footer-widget -->
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="bot-footer clearfix">
+                            <nav class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Privacy & Cookies</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Accessibility</a></li>
+                                    <li><a href="#">Store Directory</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                </ul>
+                            </nav><!-- .footer-menu -->
+
+                            <div class="payment">
+                                <img src="images/assets/payment.png" alt="">
+                            </div><!-- .payment -->
+
+                            <div class="copyright">
+                                <p>Copyrights © 2015 All Rights Reserved by EngoCreative Inc</p>
+                            </div><!-- .copyright -->
+                        </div><!-- .bot-footer -->
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .container -->
+
+            <a href="#" class="back-to-top"><span>Top</span></a>
+        </footer><!-- .site-footer -->
+    </div><!-- #wrapper -->
+    <!-- jQuery -->
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <!-- Boostrap -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!-- jQuery Sticky -->
+    <script src="~/Scripts/jquery.sticky.js"></script>
+    <!-- OWL CAROUSEL Slider -->
+    <script src="~/Scripts/owl.carousel.js"></script>
+    <!-- bxSlider -->
+    <script src="~/Scripts/jquery.bxslider.min.js"></script>
+    <!-- PrettyPhoto -->
+    <script src="~/Scripts/jquery.prettyPhoto.js"></script>
+    <!-- Jquery Countdown -->
+    <script src="~/Scripts/jquery.countdown.js"></script>
+    <!-- Jquery Parallax -->
+    <script src="~/Scripts/parallax.js"></script>
+    <!-- jQuery UI -->
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <!-- Jquery Masonry -->
+    <script src="~/Scripts/masonry.pkgd.min.js"></script>
+    <!-- Main -->
+    <script src="~/Scripts/main.js"></script>
+
+    <!-- Custom scripts -->
+    <script>
+        (function ($) {
+            "use strict";
+
+            /*  [ Sale Off Slider ]
+			- - - - - - - - - - - - - - - - - - - - */
+            $('.sale-off-slider .slider').owlCarousel({
+                singleItem: true,
+                pagination: true,
+                navigation: false,
+            });
+
+        })(jQuery);
+    </script>
+    <script src="~/wwwroot/lib/angular/angular.js"></script>
+    <script src="~/wwwroot/lib/angular/angular-route.js"></script>
+    <script src="~/wwwroot/lib/angular/angular-sanitize.js"></script>
+    <script src="~/wwwroot/lib/angular/angulartics.js"></script>
+    <script src="~/wwwroot/lib/angular/angulartics-ga.js"></script>
+    <script src="~/wwwroot/lib/videogular/videogular.js"></script>
+    <script src="~/wwwroot/lib/videogular/vg-controls.js"></script>
+    <script src="~/wwwroot/lib/videogular/vg-analytics.js"></script>
+    <script src="~/wwwroot/lib/videogular/youtube.js"></script>
+    <script src="~/wwwroot/lib/videogular/vg-overlay-play.js"></script>
+    <script src="~/wwwroot/lib/videogular/vg-poster.js"></script>
+
+    @*<script src="~/wwwroot/dist/moviKokonutCombined.js"></script>*@
+    <script src="~/Scripts/app/MainApp.js"></script>
+    <script src="~/Scripts/app/Models/ProductMappingModels.js"></script>
+    <script src="~/Scripts/app/Factories/VideoFactory.js"></script>
+    <script src="~/Scripts/app/Controllers/mk-vg-video-ctrl.js"></script>
+    <script src="~/Scripts/app/Controllers/VideosController.js"></script>
+    <script src="~/Scripts/app/Controllers/PopularVideosCtrl.js"></script>
+    <script src="~/Scripts/app/Directives/mk-vg-video-widget/mk-vg-video-widget.js"></script>
+    <script src="~/Scripts/app/Directives/mk-vg-item/mk-vg-item.js"></script>
+    <script src="~/Scripts/app/Directives/mk-vg-cuepoint-marker/mk-vg-cuepoint-marker.js"></script>
+    <script src="~/Scripts/app/Directives/mk-vg-hotspot/mk-vg-hotspot.js"></script>
+    <script src="~/Scripts/app/Directives/mk-video-item/mk-video-item.js"></script>
+    <script src="~/Scripts/app/Directives/mk-product-item/mk-product-item.js"></script>
+    <script src="~/Scripts/app/Directives/mk-product-detail/mk-product-detail.js"></script>
+    <script src="~/Scripts/app/Directives/mk-owl-carousel.js"></script>
+</body>
+</html>

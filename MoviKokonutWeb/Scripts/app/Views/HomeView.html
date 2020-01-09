@@ -1,0 +1,11 @@
+﻿
+<div class="home-slider main-slider">
+    <div class="container">
+        <mk-owlcarousel data-options="{singleItem:true,pagination:true,navigation:true}">
+            <div mk-owlcarousel-item="" class="item" ng-repeat="video in videos">
+                <!--<a href="#"><img src="images/placeholder/home4-slider1.jpg" alt=""></a>-->
+                <vg-video-widget vg-config="video"></vg-video-widget>
+            </div>
+        </mk-owlcarousel><!-- .slider -->
+    </div><!-- .container -->
+</div><!-- home-slider -->

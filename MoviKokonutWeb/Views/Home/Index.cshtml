@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div ng-controller="videosController as controller">
+    <div id="video_box">
+        <div id="video_container" class="video_container" ng-view>
+
+        </div>
+    </div>
+    <div ng-repeat="vids in videos" class="row">
+        <div ng-repeat="vid in vids" class="col-md-2">
+            <a style="overflow:hidden;" ng-href="#/videos/{{vid.videoId}}" data-movie-id="391" data-movie-name="Spectre">
+                <img ng-src="{{util.getImageURL(vid.videoId,vid.videoSrc,2)}}" style="display: block;height:90px;width:120px;">
+                {{vid.videoName}}
+                <div class="filter-selected" style="display: block;">
+                    <div class="triangle">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+</div>

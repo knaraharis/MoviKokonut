@@ -1,0 +1,17 @@
+{
+  "name": "MoviKokonutWeb",
+  "version": "1.0.0",
+  "description": "Web app to shop from a movie",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Karthik N",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.6.5",
+    "gulp": "^3.9.0",
+    "gulp-bower": "0.0.11",
+    "gulp-concat": "^2.6.0"
+  }
+}

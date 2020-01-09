@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html ng-app="movCoconutApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="~/wwwroot/lib/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="~/wwwroot/lib/videogular/videogular.css">
+    <link rel="stylesheet" href="~/wwwroot/dist/Site.css" />
+    <link rel="stylesheet" href="~/wwwroot/dist/VideoContainer.css" />
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("MOVCOCONUT", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Buyer", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Seller", "Index", "Seller")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - FRACTAL</p>
+        </footer>
+    </div>
+
+    @*@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")*@
+
+    <script src="~/wwwroot/lib/jquery/jquery.js"></script>
+    <script src="~/wwwroot/lib/angular/angular.js"></script>
+    <script src="~/wwwroot/lib/angular/angular-route.js"></script>
+    <script src="~/wwwroot/lib/angular/angular-sanitize.js"></script>
+    <script src="~/wwwroot/lib/angular/angulartics.js"></script>
+    <script src="~/wwwroot/lib/angular/angulartics-ga.js"></script>
+    <script src="~/wwwroot/lib/videogular/videogular.js"></script>
+    <script src="~/wwwroot/lib/videogular/vg-controls.js"></script>
+    <script src="~/wwwroot/lib/videogular/vg-analytics.js"></script>
+    <script src="~/wwwroot/lib/videogular/youtube.js"></script>
+    <script src="~/wwwroot/lib/videogular/vg-overlay-play.js"></script>
+    <script src="~/wwwroot/lib/videogular/vg-poster.js"></script>
+
+    <script src="~/wwwroot/dist/moviKokonutCombined.js"></script>
+    @*<script src="~/Scripts/app/MainApp.js"></script>
+    <script src="~/Scripts/app/Models/ProductMappingModels.js"></script>
+    <script src="~/Scripts/app/Factories/VideoFactory.js"></script>
+    <script src="~/Scripts/app/Controllers/mk-vg-video-ctrl.js"></script>
+    <script src="~/Scripts/app/Controllers/VideosController.js"></script>
+    <script src="~/Scripts/app/Directives/mk-vg-video-widget/mk-vg-video-widget.js"></script>
+    <script src="~/Scripts/app/Directives/mk-vg-item/mk-vg-item.js"></script>
+    <script src="~/Scripts/app/Directives/mk-vg-cuepoint-marker/mk-vg-cuepoint-marker.js"></script>
+    <script src="~/Scripts/app/Directives/mk-vg-hotspot/mk-vg-hotspot.js"></script>*@
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
